@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->longText('description');
             $table->string('video_url');
-            $table->softDeletes(); // ✅ لدعم soft delete
+            $table->softDeletes(); 
             $table->timestamps();
         });
     }
