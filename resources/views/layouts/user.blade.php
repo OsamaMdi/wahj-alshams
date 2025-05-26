@@ -1,6 +1,6 @@
 @include('user.navbar')
 
 
-@yield('content')
+@yield('Contact')
 
 @include('user.footr')
