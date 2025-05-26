@@ -1,3 +1,5 @@
+@extends('layouts.user')
+@section('Contact')
 <!-- Carousel Start -->
 <div class="container-fluid p-0 mb-6 wow fadeIn" data-wow-delay="0.1s">
     <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -303,3 +305,4 @@
     </div>
 </div>
 <!-- Team End -->
+@endsection
