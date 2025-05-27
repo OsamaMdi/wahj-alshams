@@ -219,7 +219,7 @@
     <!-- Team End -->
 
 
-    <!-- Newsletter Start -->
+  {{--   <!-- Newsletter Start -->
     <div class="container-fluid newsletter mt-6 wow fadeIn" data-wow-delay="0.1s">
         <div class="container pb-5">
             <div class="bg-white p-5 mb-5">
@@ -242,5 +242,5 @@
             </div>
         </div>
     </div>
-    <!-- Newsletter End -->
+    <!-- Newsletter End --> --}}
 @endsection
