@@ -73,8 +73,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
-                    <a href="{{ route('about') }}" class="nav-item nav-link">About</a>
+                    <a href="{{ route('home') }}" class="nav-item nav-link {{request()->routeIs('home') ? 'active' : '' }}">Home</a>        
+                    <a href="{{ route('about') }}" class="nav-item nav-link {{request()->routeIs('about') ? 'active' : ''}}">About</a>
                     <a href="" class="nav-item nav-link">Services</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -86,11 +86,11 @@
                             <a href="" class="dropdown-item">404 Page</a>
                         </div>
                     </div>
-                    <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
+                    <a href="{{ route('contact') }}" class="nav-item nav-link {{request()->routeIs('contact') ? 'active' : ''}}">Contact</a>
                 </div>
                 <div class="ms-auto d-none d-lg-block">
-                    <a href="#" class="btn btn-primary py-2 px-3">Get A Quote</a>
-                </div>
+                <a href="/#quoteForm" class="btn btn-primary py-2 px-3">Volunteer</a> 
+            </div>
             </div>
         </nav>
     </div>

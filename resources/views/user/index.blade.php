@@ -97,55 +97,46 @@
     <div class="container">
         <div class="row g-0 justify-content-end">
             <div class="col-lg-6 pt-5">
-                <div class="mt-5">
-                    <h1 class="display-6 text-white text-uppercase mb-4 wow fadeIn" data-wow-delay="0.3s">
-                        Why You should Choose Our welding Services
-                    </h1>
-                    <p class="text-light mb-4 wow fadeIn" data-wow-delay="0.4s">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue,
-                        iaculis id elit eget, ultrices pulvinar tortor. Quisque vel lorem porttitor,
-                        malesuada arcu quis, fringilla risus. Pellentesque eu consequat augue.
-                    </p>
+              <div class="mt-5">
+                        <h1 class="display-6 text-white text-uppercase mb-4 wow fadeIn" data-wow-delay="0.3s">
+                            What We Offer at Wahj-AlShams
+                        </h1>
+                        <p class="text-light mb-4 wow fadeIn" data-wow-delay="0.4s">
+                            Explore the range of creative and community-driven services we provide to inspire, educate, and
+                            entertain.
+                        </p>
 
-                    <div class="row g-4 pt-2 mb-4">
-                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
-                            <div class="flex-column text-center border border-5 border-primary p-5">
-                                <h1 class="text-white" data-toggle="counter-up">9999</h1>
-                                <p class="text-white text-uppercase mb-0">Satisfied Clients</p>
+                        <div class="row g-4 pt-2 mb-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                                <div class="flex-column text-center border border-5 border-primary p-4">
+                                    <i class="bi bi-people-fill text-white fs-1 mb-2"></i>
+                                    <h5 class="text-white text-uppercase">Theatrical Performances</h5>
+                                    <p class="text-white">Live stage plays for various audiences.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="flex-column text-center border border-5 border-primary p-4">
+                                    <i class="bi bi-calendar-event text-white fs-1 mb-2"></i>
+                                    <h5 class="text-white text-uppercase">Public Events</h5>
+                                    <p class="text-white">Cultural, social, and seasonal events.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.6s">
+                                <div class="flex-column text-center border border-5 border-primary p-4">
+                                    <i class="bi bi-lightbulb text-white fs-1 mb-2"></i>
+                                    <h5 class="text-white text-uppercase">Workshops</h5>
+                                    <p class="text-white">Educational and creative skill sessions.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="flex-column text-center border border-5 border-primary p-4">
+                                    <i class="bi bi-hand-thumbs-up text-white fs-1 mb-2"></i>
+                                    <h5 class="text-white text-uppercase">Volunteering</h5>
+                                    <p class="text-white">Engage in meaningful community service.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
-                            <div class="flex-column text-center border border-5 border-primary p-5">
-                                <h1 class="text-white" data-toggle="counter-up">9999</h1>
-                                <p class="text-white text-uppercase mb-0">Complete Projects</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="border border-5 border-primary border-bottom-0 p-5">
-                        <div class="experience mb-4 wow fadeIn" data-wow-delay="0.6s">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span class="text-white text-uppercase">Experience</span>
-                                <span class="text-white">90%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90"
-                                     aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="experience wow fadeIn" data-wow-delay="0.7s">
-                            <div class="d-flex justify-content-between mb-2">
-                                <span class="text-white text-uppercase">Work Done</span>
-                                <span class="text-white">95%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95"
-                                     aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                    </div>
             </div>
         </div>
     </div>
@@ -191,37 +182,18 @@
 
 
 <!-- Appoinment Start -->
-<div class="container-fluid appoinment mt-6 mb-6 py-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container pt-5">
+<div id="quoteForm" class="container-fluid appoinment mt-6 mb-6 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container pt-5">
         <div class="row gy-5 gx-0">
             <div class="col-lg-6 pe-lg-5 wow fadeIn" data-wow-delay="0.3s">
-                <h1 class="display-6 text-uppercase text-white mb-4">We Complete Welding & Metal Projects in Time
-                </h1>
-                <p class="text-white mb-5 wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus
-                    augue, iaculis id elit eget, ultrices pulvinar tortor.</p>
-                <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.5s">
-                    <div class="btn-lg-square bg-white">
-                        <i class="bi bi-geo-alt text-dark fs-3"></i>
-                    </div>
-                    <div class="ms-3">
-                        <h6 class="text-white text-uppercase">Office Address</h6>
-                        <span class="text-white">123 Street, New York, USA</span>
-                    </div>
-                </div>
+                <h1 class="display-6 text-uppercase text-white mb-4">Volunteer with Us and Be Part of the Warm Wahj Al Shams Family!</h1>
+                <p class="text-white mb-5 wow fadeIn" data-wow-delay="0.4s">At Wahj Al Shams, volunteers play a vital role in bringing vibrant theatrical performances to life. By joining the team, you'll have the opportunity to support a variety of plays and take part in organizing exciting, high-energy events. Whether it’s behind the scenes or in the spotlight, your contribution helps create unforgettable experiences filled with creativity, teamwork, and passion. Volunteering with us means becoming part of a warm, dynamic family that thrives on making a positive impact through art and community spirit. </p>
                 <hr class="bg-body">
-                <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.6s">
-                    <div class="btn-lg-square bg-white">
-                        <i class="bi bi-clock text-dark fs-3"></i>
-                    </div>
-                    <div class="ms-3">
-                        <h6 class="text-white text-uppercase">Office Time</h6>
-                        <span class="text-white">Mon-Sat 09am-5pm, Sun Closed</span>
-                    </div>
-                </div>
+                
             </div>
             <div class="col-lg-6 mb-n5 wow fadeIn" data-wow-delay="0.7s">
                 <div class="bg-white p-5">
-                    <h2 class="text-uppercase mb-4">Online Appoinment</h2>
+                    <h2 class="text-uppercase mb-4">Volunteer Application Form</h2>
                     <div class="row g-3">
                         <div class="col-sm-6">
                             <div class="form-floating">
@@ -237,28 +209,30 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control border-0 bg-light" id="mobile" placeholder="Your Mobile">
-                                <label for="mobile">Your Mobile</label>
+                                <input type="number" class="form-control border-0 bg-light" id="age" placeholder="Your Age">
+                                <label for="age">Your Age</label>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-floating">
-                                <select class="form-select border-0 bg-light" id="service">
-                                    <option selected>Steel Welding</option>
-                                    <option value="">Pipe Welding</option>
+                                <select class="form-select border-0 bg-light" id="volunteerPeriod">
+                                    <option selected>1-2 Weeks</option>
+                                    <option value="3-4 Weeks">3-4 Weeks</option>
+                                    <option value="1-2 Months">1-2 Months</option>
+                                    <option value="Flexible">Flexible</option>
                                 </select>
-                                <label for="service">Choose A Service</label>
+                                <label for="volunteerPeriod">Preferred Volunteer Period</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <textarea class="form-control border-0 bg-light" placeholder="Leave a message here" id="message"
+                                <textarea class="form-control border-0 bg-light" placeholder="Tell us why you want to volunteer" id="whyVolunteer"
                                     style="height: 130px"></textarea>
-                                <label for="message">Message</label>
+                                <label for="whyVolunteer">Why do you want to volunteer?</label>
                             </div>
                         </div>
                         <div class="col-12 text-center">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
+                            <button class="btn btn-primary w-100 py-3" type="submit">Submit Application</button>
                         </div>
                     </div>
                 </div>
