@@ -1,35 +1,37 @@
+@extends('layouts.user')
+@section('Contact')
 <!-- Carousel Start -->
 <div class="container-fluid p-0 mb-6 wow fadeIn" data-wow-delay="0.1s">
     <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1">
-                <img class="img-fluid" src="{{ asset('img/carousel-1.jpg') }}" alt="Image">
+                <img class="img-fluid" src="{{ asset('img/p4.jpeg') }}" alt="Image">
             </button>
             <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" aria-label="Slide 2">
-                <img class="img-fluid" src="{{ asset('img/carousel-2.jpg') }}" alt="Image">
+                <img class="img-fluid" src="{{ asset('img/p5.jpeg') }}" alt="Image">
             </button>
             <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2" aria-label="Slide 3">
-                <img class="img-fluid" src="{{ asset('img/carousel-3.jpg') }}" alt="Image">
+                <img class="img-fluid" src="{{ asset('img/p4.jpeg') }}" alt="Image">
             </button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="w-100" src="{{ asset('img/carousel-1.jpg') }}" alt="Image">
+                <img class="w-100" src="{{ asset('img/p1.jpeg') }}" alt="Image">
                 <div class="carousel-caption">
                     <h1 class="display-1 text-uppercase text-white mb-4 animated zoomIn">Best Metalcraft Solutions</h1>
                     <a href="#" class="btn btn-primary py-3 px-4">Explore More</a>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="w-100" src="{{ asset('img/carousel-2.jpg') }}" alt="Image">
+                <img class="w-100" src="{{ asset('img/p2.jpeg') }}" alt="Image">
                 <div class="carousel-caption">
                     <h1 class="display-1 text-uppercase text-white mb-4 animated zoomIn">Best Metalcraft Solutions</h1>
                     <a href="#" class="btn btn-primary py-3 px-4">Explore More</a>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="w-100" src="{{ asset('img/carousel-3.jpg') }}" alt="Image">
+                <img class="w-100" src="{{ asset('img/p1.jpeg') }}" alt="Image">
                 <div class="carousel-caption">
                     <h1 class="display-1 text-uppercase text-white mb-4 animated zoomIn">Best Metalcraft Solutions</h1>
                     <a href="#" class="btn btn-primary py-3 px-4">Explore More</a>
@@ -47,7 +49,7 @@
         <div class="row g-5">
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                 <div class="about-img">
-                    <img class="img-fluid w-100" src="{{ asset('img/about.jpg') }}">
+                    <img class="img-fluid w-100" src="{{ asset('img/p2.jpeg') }}">
                 </div>
             </div>
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -159,14 +161,14 @@
         </div>
         <div class="row g-4">
             @foreach ([
-                ['img' => 'service-1.jpg', 'title' => 'Metal Works'],
-                ['img' => 'service-2.jpg', 'title' => 'Steel Welding'],
-                ['img' => 'service-3.jpg', 'title' => 'Pipe Welding'],
-                ['img' => 'service-4.jpg', 'title' => 'Custom Welding'],
-                ['img' => 'service-5.jpg', 'title' => 'Steel Welding'],
-                ['img' => 'service-6.jpg', 'title' => 'Metal Work'],
-                ['img' => 'service-7.jpg', 'title' => 'Custom Welding'],
-                ['img' => 'service-8.jpg', 'title' => 'Pipe Welding'],
+                ['img' => 'p2.jpeg', 'title' => 'Metal Works'],
+                ['img' => 'p1.jpeg', 'title' => 'Steel Welding'],
+                ['img' => 'p3.jpeg', 'title' => 'Pipe Welding'],
+                ['img' => 'p4.jpeg', 'title' => 'Custom Welding'],
+                ['img' => 'p5.jpeg', 'title' => 'Steel Welding'],
+                ['img' => 'p1.jpeg', 'title' => 'Metal Work'],
+                ['img' => 'p2.jpeg', 'title' => 'Custom Welding'],
+                ['img' => 'p3.jpeg', 'title' => 'Pipe Welding'],
             ] as $index => $service)
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="{{ 0.1 + ($index % 4) * 0.1 }}s">
                     <div class="service-item">
@@ -303,3 +305,4 @@
     </div>
 </div>
 <!-- Team End -->
+@endsection
