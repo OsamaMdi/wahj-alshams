@@ -9,18 +9,7 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-
-    }
-
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists('users');
-    }
-};
- public function up(): void
+    public function up(): void
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
@@ -31,3 +20,13 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('users');
+    }
+};

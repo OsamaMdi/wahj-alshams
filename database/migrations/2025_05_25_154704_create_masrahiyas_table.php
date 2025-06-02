@@ -30,6 +30,7 @@ return new class extends Migration
             $table->text('artistic_paragraph'); // الفقرة الفنية
             $table->string('image_path')->nullable(); // صورة المسرحية
             $table->string('youtube_url')->nullable(); // رابط اليوتيوب
+            $table->json('characters')->nullable();
             $table->timestamps();
         });
     }
@@ -40,6 +41,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('masrahiyas');
+        Schema::dropIfExists('masrahiyat');
     }
 };

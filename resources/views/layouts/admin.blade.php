@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>@yield('title', 'Admin Panel')</title>
@@ -18,7 +19,9 @@
     <link href="{{ asset('css/admin.css') }}" rel="stylesheet"> <!-- هذا يبقى محلي لأنه مخصص لك -->
 </head>
 
-<body>
+<body data-message="{{ session('success') ?? session('error') }}"
+    data-status="{{ session('success') ? 'success' : (session('error') ? 'error' : '') }}">
+
     <!-- Sidebar -->
     <div id="sidebar" class="sidebar bg-dark text-white">
         <div class="sidebar-header p-4 text-center">
@@ -26,7 +29,13 @@
         </div>
         <ul class="nav flex-column px-3">
             <li class="nav-item"><a class="nav-link text-white" href="#">Users</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#">Masrahiyat</a></li>
+            <li class="nav-item">
+                <a class="nav-link text-white {{ request()->routeIs('admin.masrahiyat.*') ? 'active' : '' }}"
+                    href="{{ route('admin.masrahiyat.index') }}">
+                    Masrahiyat
+                </a>
+            </li>
+
             <li class="nav-item"><a class="nav-link text-white" href="#">Team Work</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="#">Statistics</a></li>
         </ul>
@@ -47,7 +56,7 @@
         </div>
     </div>
 
-        <!-- jQuery -->
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Bootstrap Bundle JS (with Popper) -->
@@ -56,6 +65,9 @@
     <!-- Custom Admin Script -->
     <script src="{{ asset('js/admin.js') }}"></script>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="{{ asset('js/alerts.js') }}"></script>
+    @stack('scripts')
 </body>
+
 </html>

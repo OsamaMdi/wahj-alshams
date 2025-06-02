@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\MasrahiyatController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,3 +35,22 @@ Route::get('contact', function () {
 Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
 })->name('admin.dashboard');
+
+
+
+
+
+
+
+
+
+
+
+
+//                     // Admin Routes
+
+
+Route::prefix('admin')->name('admin.')/* ->middleware(['auth']) */->group(function () {
+    Route::resource('masrahiyat', MasrahiyatController::class);
+
+});

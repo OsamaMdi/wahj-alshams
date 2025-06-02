@@ -1,17 +1,35 @@
 <?php
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Masrahiya extends Model
 {
-    use SoftDeletes; 
+    protected $table = 'masrahiyat';
 
     protected $fillable = [
         'title',
-        'description',
-        'video_url',
+        'author',
+        'director',
+        'assistant_director',
+        'music_composer',
+        'artistic_consultant',
+        'collaborators',
+        'number_participants',
+        'performance_dates',
+        'performance_locations',
+        'play_type',
+        'significance',
+        'inspiration_source',
+        'artistic_paragraph',
+        'image_path',
+        'youtube_url',
+        'characters',
+    ];
+
+    protected $casts = [
+        'characters' => 'array',
+        'performance_dates' => 'date',
     ];
 }
-
