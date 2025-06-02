@@ -29,3 +29,8 @@ Route::get('about', function () {
 Route::get('contact', function () {
     return view('user.contact');
 })->name('contact');
+
+
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard');
+})->name('admin.dashboard');
