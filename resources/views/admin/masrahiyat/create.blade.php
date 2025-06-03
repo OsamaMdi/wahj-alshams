@@ -1,11 +1,11 @@
 @extends('layouts.admin')
-@section('title', 'Add New masrahiya')
+@section('title', 'Add New Play')
 
 @section('content')
 
 
 <div class="card shadow-sm">
-    <div class="card-header"><h5 class="mb-0">Add New masrahiya</h5></div>
+    <div class="card-header"><h5 class="mb-0">Add New Play</h5></div>
 
     <div class="card-body">
         <form action="{{ route('admin.masrahiyat.store') }}" method="POST" enctype="multipart/form-data" id="createForm">
@@ -82,7 +82,7 @@
             </div>
 
             <div class="mb-3">
-                <label>masrahiya Type *</label>
+                <label>Play Type *</label>
                 <input type="text" name="play_type" class="form-control @error('play_type') is-invalid @enderror" value="{{ old('play_type') }}">
                 @error('play_type')<div class="text-danger small">{{ $message }}</div>@enderror
                 <small class="text-danger js-error" data-field="play_type" style="display:none;"></small>
@@ -116,7 +116,7 @@
             </div>
 
             <div class="mb-3">
-                <label>masrahiya Image</label>
+                <label>Play Image</label>
                 <input type="file" name="image_path" class="form-control @error('image_path') is-invalid @enderror">
                 @error('image_path')<div class="text-danger small">{{ $message }}</div>@enderror
             </div>

@@ -28,7 +28,13 @@
             <img src="{{ asset('img/logo.png') }}" alt="Logo" class="img-fluid" style="max-height: 60px;">
         </div>
         <ul class="nav flex-column px-3">
-            <li class="nav-item"><a class="nav-link text-white" href="#">Users</a></li>
+            <li class="nav-item">
+                <a class="nav-link text-white {{ request()->routeIs('admin.users.*') ? 'active' : '' }}"
+                    href="{{ route('admin.users.index') }}">
+                    Users
+                </a>
+            </li>
+
             <li class="nav-item">
                 <a class="nav-link text-white {{ request()->routeIs('admin.masrahiyat.*') ? 'active' : '' }}"
                     href="{{ route('admin.masrahiyat.index') }}">
@@ -36,8 +42,20 @@
                 </a>
             </li>
 
-            <li class="nav-item"><a class="nav-link text-white" href="#">Team Work</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#">Statistics</a></li>
+            <li class="nav-item">
+                <a class="nav-link text-white {{ request()->routeIs('admin.teamwork.*') ? 'active' : '' }}"
+                    href="{{ route('admin.teamwork.index') }}">
+                    Team Work
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white {{ request()->routeIs('admin.statistics.*') ? 'active' : '' }}"
+                    href="{{ route('admin.statistics.index') }}">
+                    Statistics
+                </a>
+            </li>
+
         </ul>
         <div class="logout mt-auto text-center p-3">
             <a href="#" class="btn btn-danger w-100"><i class="fas fa-sign-out-alt me-1"></i> Logout</a>
@@ -64,6 +82,9 @@
 
     <!-- Custom Admin Script -->
     <script src="{{ asset('js/admin.js') }}"></script>
+
+    <script src="{{ asset('js/delete-confirm.js') }}"></script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="{{ asset('js/alerts.js') }}"></script>

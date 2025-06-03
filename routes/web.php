@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Admin\TeamworkController;
 use App\Http\Controllers\Admin\MasrahiyatController;
+use App\Http\Controllers\Admin\StatisticsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,5 +55,9 @@ Route::get('/admin/dashboard', function () {
 
 Route::prefix('admin')->name('admin.')/* ->middleware(['auth']) */->group(function () {
     Route::resource('masrahiyat', MasrahiyatController::class);
-
+     Route::resource('users', UserController::class)->names('users');
+     Route::resource('teamwork', TeamworkController::class)->names('teamwork');
+      Route::get('statistics', [StatisticsController::class, 'index'])->name('statistics.index');
+    Route::get('statistics/{id}/edit', [StatisticsController::class, 'edit'])->name('statistics.edit');
+    Route::put('statistics/{id}', [StatisticsController::class, 'update'])->name('statistics.update');
 });

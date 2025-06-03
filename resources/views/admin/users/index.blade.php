@@ -1,21 +1,21 @@
 @extends('layouts.admin')
-@section('title', 'Plays List')
+@section('title', 'Admin Users')
 
 @section('content')
 
-
     <div class="card shadow-sm">
         <div class="card-header d-flex justify-content-between align-items-center">
-            <h5 class="mb-0">All Plays</h5>
-            <a href="{{ route('admin.masrahiyat.create') }}" class="btn btn-primary">
+            <h5 class="mb-0">Admin Accounts</h5>
+            <a href="{{ route('admin.users.create') }}" class="btn btn-primary">
                 <i class="fas fa-plus me-1"></i> Add New
             </a>
         </div>
+
         <div class="card-body">
             <form method="GET" class="mb-3">
                 <div class="input-group">
                     <input type="text" name="search" value="{{ request('search') }}" class="form-control"
-                        placeholder="Search by title">
+                        placeholder="Search by name or email">
                     <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
                 </div>
             </form>
@@ -25,33 +25,26 @@
                     <thead class="table-dark">
                         <tr>
                             <th>#</th>
-                            <th>Title</th>
-                            <th>Author</th>
-                            <th>Type</th>
-                            <th>Participants</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Created At</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @forelse ($masrahiyat as $play)
+                        @forelse ($users as $user)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
-                                <td>{{ $play->title }}</td>
-                                <td>{{ $play->author }}</td>
-                                <td>{{ $play->play_type }}</td>
-                                <td>{{ $play->number_participants }}</td>
+                                <td>{{ $user->name }}</td>
+                                <td>{{ $user->email }}</td>
+                                <td>{{ $user->created_at?->format('Y-m-d') }}</td>
                                 <td>
-                                    <a href="{{ route('admin.masrahiyat.show', $play->id) }}"
-                                        class="btn btn-sm btn-info me-1" title="View">
-                                        <i class="fas fa-eye"></i>
-                                    </a>
-                                    <a href="{{ route('admin.masrahiyat.edit', ['masrahiyat' => $play->id]) }}"
-                                        class="btn btn-sm btn-warning me-1" title="Edit">
+                                    <a href="{{ route('admin.users.edit', $user->id) }}" class="btn btn-sm btn-warning me-1"
+                                        title="Edit">
                                         <i class="fas fa-edit"></i>
                                     </a>
 
-
-                                    <form action="{{ route('admin.masrahiyat.destroy', $play->id) }}" method="POST"
+                                    <form action="{{ route('admin.users.destroy', $user->id) }}" method="POST"
                                         class="d-inline btn-delete-form">
                                         @csrf
                                         @method('DELETE')
@@ -64,14 +57,15 @@
                             </tr>
                         @empty
                             <tr>
-                                <td colspan="6">No records found.</td>
+                                <td colspan="5">No admin accounts found.</td>
                             </tr>
                         @endforelse
                     </tbody>
                 </table>
             </div>
 
-            {{ $masrahiyat->withQueryString()->links() }}
+            {{ $users->withQueryString()->links() }}
         </div>
     </div>
+
 @endsection

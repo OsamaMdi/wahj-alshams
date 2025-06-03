@@ -10,7 +10,7 @@ class CreateTeamworkTable extends Migration
         Schema::create('teamwork', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('image_path')->nullable(); // تم تغيير image إلى string
+            $table->string('image_path')->nullable();
             $table->text('description')->nullable();
             $table->timestamps();
         });
