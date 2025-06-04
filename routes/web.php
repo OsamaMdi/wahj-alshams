@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\Admin\TeamworkController;
 use App\Http\Controllers\Admin\MasrahiyatController;
 use App\Http\Controllers\Admin\StatisticsController;
@@ -21,9 +21,9 @@ use App\Http\Controllers\Admin\StatisticsController;
     return view('welcome');
 }); */
 
-Route::get('/', function () {
-    return view('user.index');
-})->name('home');
+
+Route::get('/', [UserController::class, 'home'])->name('home');
+Route::get('/masrahiyat-home/page/{page}', [UserController::class, 'loadMasrahiyatPage']);
 
 Route::get('about', function () {
     return view('user.about');
@@ -39,16 +39,7 @@ Route::get('services', function () {
 
 
 
-Route::get('/admin/dashboard', function () {
-    return view('admin.dashboard');
-})->name('admin.dashboard');
-
-
-
-
-
-
-
+Route::get('/masrahiyat/{id}/details', [UserController::class, 'detailsMasrahiyat'])->name('masrahiyat.details');
 
 
 
@@ -61,7 +52,8 @@ Route::prefix('admin')->name('admin.')/* ->middleware(['auth']) */->group(functi
     Route::resource('masrahiyat', MasrahiyatController::class);
      Route::resource('users', UserController::class)->names('users');
      Route::resource('teamwork', TeamworkController::class)->names('teamwork');
-      Route::get('statistics', [StatisticsController::class, 'index'])->name('statistics.index');
+      Route::get('dashboard', [StatisticsController::class, 'index'])->name('dashboard.index');
     Route::get('statistics/{id}/edit', [StatisticsController::class, 'edit'])->name('statistics.edit');
     Route::put('statistics/{id}', [StatisticsController::class, 'update'])->name('statistics.update');
 });
+

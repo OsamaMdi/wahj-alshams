@@ -14,8 +14,8 @@ class MasrahiyatController extends Controller
         $search = $request->input('search');
 
         $masrahiyat = Masrahiya::when($search, function ($query, $search) {
-                return $query->where('title', 'like', "%$search%");
-            })
+            return $query->where('title', 'like', "%$search%");
+        })
             ->orderByDesc('created_at')
             ->paginate(10);
 

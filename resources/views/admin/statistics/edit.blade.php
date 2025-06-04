@@ -36,6 +36,14 @@
                 <small class="text-danger js-error" data-field="number_of_volunteers" style="display:none;"></small>
             </div>
 
+            <div class="mb-3">
+                <label>Number of Governorates *</label>
+                <input type="number" name="number_of_governorates" class="form-control @error('number_of_governorates') is-invalid @enderror"
+                    value="{{ old('number_of_governorates', $statistics->number_of_governorates) }}" required min="0">
+                @error('number_of_governorates')<div class="text-danger small">{{ $message }}</div>@enderror
+                <small class="text-danger js-error" data-field="number_of_governorates" style="display:none;"></small>
+            </div>
+
             <div class="d-flex justify-content-end">
                 <button type="submit" class="btn btn-success">
                     <i class="fas fa-save me-1"></i> Save
@@ -52,7 +60,7 @@
         let hasError = false;
         document.querySelectorAll('.js-error').forEach(el => el.style.display = 'none');
 
-        const fields = ['number_of_plays', 'number_of_awards', 'number_of_volunteers'];
+        const fields = ['number_of_plays', 'number_of_awards', 'number_of_volunteers', 'number_of_governorates'];
         fields.forEach(function (field) {
             const input = document.querySelector(`[name="${field}"]`);
             const value = input.value.trim();
