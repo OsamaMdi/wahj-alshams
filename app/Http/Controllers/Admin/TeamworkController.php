@@ -14,8 +14,8 @@ class TeamworkController extends Controller
         $search = $request->input('search');
 
         $teamworks = Teamwork::when($search, function ($query, $search) {
-                return $query->where('name', 'like', "%$search%");
-            })
+            return $query->where('name', 'like', "%$search%");
+        })
             ->latest()
             ->paginate(10);
 

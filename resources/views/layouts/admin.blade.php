@@ -28,6 +28,14 @@
             <img src="{{ asset('img/logo.png') }}" alt="Logo" class="img-fluid" style="max-height: 60px;">
         </div>
         <ul class="nav flex-column px-3">
+
+            <li class="nav-item">
+                <a class="nav-link text-white {{ request()->routeIs('admin.dashboard.*') ? 'active' : '' }}"
+                    href="{{ route('admin.dashboard.index') }}">
+                    Dashboard
+                </a>
+            </li>
+
             <li class="nav-item">
                 <a class="nav-link text-white {{ request()->routeIs('admin.users.*') ? 'active' : '' }}"
                     href="{{ route('admin.users.index') }}">
@@ -48,14 +56,6 @@
                     Team Work
                 </a>
             </li>
-
-            <li class="nav-item">
-                <a class="nav-link text-white {{ request()->routeIs('admin.statistics.*') ? 'active' : '' }}"
-                    href="{{ route('admin.statistics.index') }}">
-                    Statistics
-                </a>
-            </li>
-
         </ul>
         <div class="logout mt-auto text-center p-3">
             <a href="#" class="btn btn-danger w-100"><i class="fas fa-sign-out-alt me-1"></i> Logout</a>
