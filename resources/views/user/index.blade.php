@@ -166,9 +166,12 @@
                                     <p class="mb-1 text-muted small">Date:
                                         {{ \Carbon\Carbon::parse($play->performance_dates)->format('M d, Y') }}</p>
                                 </div>
-                                <a class="btn btn-light px-3 mt-2" href="{{ route('masrahiyat.details', $play->id) }}">
-                                    Read More <i class="bi bi-chevron-double-right ms-1"></i>
-                                </a>
+<div class="readmore-wrapper mt-auto px-4 pb-3 text-end">
+    <a href="{{ route('masrahiyat.details', $play->id) }}" class="custom-readmore-link">
+        Read More <i class="bi bi-chevron-double-right ms-1"></i>
+    </a>
+</div>
+
                             </div>
                         </div>
                     </div>

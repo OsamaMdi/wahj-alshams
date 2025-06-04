@@ -25,9 +25,7 @@ use App\Http\Controllers\Admin\StatisticsController;
 Route::get('/', [UserController::class, 'home'])->name('home');
 Route::get('/masrahiyat-home/page/{page}', [UserController::class, 'loadMasrahiyatPage']);
 
-Route::get('about', function () {
-    return view('user.about');
-})->name('about');
+Route::get('/about', [UserController::class, 'about'])->name('about');
 
 
 Route::get('contact', function () {

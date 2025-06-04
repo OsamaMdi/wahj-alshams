@@ -2,20 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Teamwork;
 use App\Models\Masrahiya;
-use Illuminate\Support\Facades\View;
+use App\Models\Statistic;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\View;
 
 class UserController extends Controller
 {
- public function detailsMasrahiyat($id)
-{
-    $masrahiyat = Masrahiya::findOrFail($id);
-    return view('user.details-masrahiyat', compact('masrahiyat'));
-}
+    public function detailsMasrahiyat($id)
+    {
+        $masrahiyat = Masrahiya::findOrFail($id);
+        return view('user.details-masrahiyat', compact('masrahiyat'));
+    }
 
-  public function home()
+    public function home()
     {
         $masrahiyat = Masrahiya::latest()->take(8)->get();
         $total = Masrahiya::count();
@@ -31,5 +33,12 @@ class UserController extends Controller
         $html = View::make('user.partials.home-masrahiyat-cards', compact('masrahiyat'))->render();
 
         return response()->json(['html' => $html]);
+    }
+
+    public function about()
+    {
+        $team = Teamwork::all();
+        $statistics = Statistic::latest()->first();
+        return view('user.about', compact('team', 'statistics'));
     }
 }

@@ -1,6 +1,5 @@
 @extends('layouts.user')
 @section('Contact')
-
     <!-- Page Header Start -->
     <div class="container-fluid page-header pt-5 mb-6 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center pt-5">
@@ -63,7 +62,8 @@
                     <p><i class="fa fa-check-square text-primary me-3"></i>Many variations of passages of lorem ipsum
                     </p>
                     <div class="border border-5 border-primary p-4 text-center mt-4">
-                        <h4 class="lh-base text-uppercase mb-0">We’re Good in All Metal Works Using Quality Welding Tools</h4>
+                        <h4 class="lh-base text-uppercase mb-0">We’re Good in All Metal Works Using Quality Welding Tools
+                        </h4>
                     </div>
                 </div>
             </div>
@@ -76,150 +76,96 @@
     <div class="container-fluid pt-6 pb-6">
         <div class="container pt-4">
             <div class="row g-0 feature-row wow fadeIn" data-wow-delay="0.1s">
+
+                <!-- Total Plays -->
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="feature-item border h-100">
-                        <div class="feature-icon btn-xxl-square bg-primary mb-4 mt-n4">
-                            <i class="fa fa-hammer fa-2x text-white"></i>
+                    <div class="feature-item border h-100 text-center">
+                        <div class="feature-icon btn-xxl-square bg-primary mb-4 mt-n4 mx-auto">
+                            <i class="fas fa-theater-masks fa-2x text-white"></i>
                         </div>
-                        <div class="p-5 pt-0">
-                            <h5 class="text-uppercase mb-3">Quality Welding</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
-                            <a class="position-relative text-body text-uppercase small d-flex justify-content-between"
-                                href="#"><b class="bg-white pe-3">Read More</b> <i
-                                    class="bi bi-arrow-right bg-white ps-3"></i></a>
+                        <div class="p-4 pt-0">
+                            <h5 class="text-uppercase mb-2">Total Plays</h5>
+                            <h2 class="text-primary fw-bold">{{ $statistics->number_of_plays }}</h2>
+                            <p class="mb-0">Plays presented nationwide</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Awards -->
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.4s">
-                    <div class="feature-item border h-100">
-                        <div class="feature-icon btn-xxl-square bg-primary mb-4 mt-n4">
-                            <i class="fa fa-dollar-sign fa-2x text-white"></i>
+                    <div class="feature-item border h-100 text-center">
+                        <div class="feature-icon btn-xxl-square bg-success mb-4 mt-n4 mx-auto">
+                            <i class="fas fa-trophy fa-2x text-white"></i>
                         </div>
-                        <div class="p-5 pt-0">
-                            <h5 class="text-uppercase">Affordable Pricing</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
-                            <a class="position-relative text-body text-uppercase small d-flex justify-content-between"
-                                href="#"><b class="bg-white pe-3">Read More</b> <i
-                                    class="bi bi-arrow-right bg-white ps-3"></i></a>
+                        <div class="p-4 pt-0">
+                            <h5 class="text-uppercase mb-2">Awards Won</h5>
+                            <h2 class="text-success fw-bold">{{ $statistics->number_of_awards }}</h2>
+                            <p class="mb-0">National & local achievements</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Volunteers -->
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="feature-item border h-100">
-                        <div class="feature-icon btn-xxl-square bg-primary mb-4 mt-n4">
-                            <i class="fa fa-check-double fa-2x text-white"></i>
+                    <div class="feature-item border h-100 text-center">
+                        <div class="feature-icon btn-xxl-square bg-warning mb-4 mt-n4 mx-auto">
+                            <i class="fas fa-users fa-2x text-white"></i>
                         </div>
-                        <div class="p-5 pt-0">
-                            <h5 class="text-uppercase">Best Welder</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
-                            <a class="position-relative text-body text-uppercase small d-flex justify-content-between"
-                                href="#"><b class="bg-white pe-3">Read More</b> <i
-                                    class="bi bi-arrow-right bg-white ps-3"></i></a>
+                        <div class="p-4 pt-0">
+                            <h5 class="text-uppercase mb-2">Volunteers</h5>
+                            <h2 class="text-warning fw-bold">{{ $statistics->number_of_volunteers }}</h2>
+                            <p class="mb-0">Supporting every step</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Governorates -->
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.6s">
-                    <div class="feature-item border h-100">
-                        <div class="feature-icon btn-xxl-square bg-primary mb-4 mt-n4">
-                            <i class="fa fa-tools fa-2x text-white"></i>
+                    <div class="feature-item border h-100 text-center">
+                        <div class="feature-icon btn-xxl-square bg-danger mb-4 mt-n4 mx-auto">
+                            <i class="fas fa-map-marker-alt fa-2x text-white"></i>
                         </div>
-                        <div class="p-5 pt-0">
-                            <h5 class="text-uppercase">Quality Tools</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.</p>
-                            <a class="position-relative text-body text-uppercase small d-flex justify-content-between"
-                                href="#"><b class="bg-white pe-3">Read More</b> <i
-                                    class="bi bi-arrow-right bg-white ps-3"></i></a>
+                        <div class="p-4 pt-0">
+                            <h5 class="text-uppercase mb-2">Governorates</h5>
+                            <h2 class="text-danger fw-bold">{{ $statistics->number_of_governorates }}</h2>
+                            <p class="mb-0">Areas we've reached</p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
     <!-- Features End -->
 
 
-    <!-- Team Start -->
-    <div class="container-fluid team pt-6 pb-6">
+    <!-- Team Section Start -->
+    <div class="container-fluid wahj-team pt-6 pb-6">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="display-6 text-uppercase mb-5">Meet Our Professional and Experience Welder</h1>
+                <h1 class="display-6 text-uppercase mb-5">Meet The Wahaj Al Shams Team</h1>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square btn-dark mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-dark mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-dark mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-square btn-dark mx-1" href=""><i class="fab fa-youtube"></i></a>
+            <div class="row g-4 justify-content-center">
+                @foreach ($team as $index => $member)
+                    <div class="col-xl-3 col-md-4 col-sm-6 col-10 wow fadeInUp" data-wow-delay="{{ 0.3 + $index * 0.1 }}s">
+                        <div class="wahj-team-card">
+                            <div class="wahj-team-img">
+                                <img src="{{ asset('storage/' . $member->image_path) }}" alt="{{ $member->name }}">
+                            </div>
+                            <div class="wahj-team-content">
+                                <h5>{{ $member->name }}</h5>
+                                <p class="role">{{ $member->description }}</p>
                             </div>
                         </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-1">Alex Robin</h5>
-                            <span>Welder</span>
-                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square btn-dark mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-dark mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-dark mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-square btn-dark mx-1" href=""><i class="fab fa-youtube"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-1">Andrew Bon</h5>
-                            <span>Welder</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square btn-dark mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-dark mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-dark mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-square btn-dark mx-1" href=""><i class="fab fa-youtube"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-1">Martin Tompson</h5>
-                            <span>Welder</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square btn-dark mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-dark mx-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-dark mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-square btn-dark mx-1" href=""><i class="fab fa-youtube"></i></a>
-                            </div>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-1">Clarabelle Samber</h5>
-                            <span>Welder</span>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
-    <!-- Team End -->
+    <!-- Team Section End -->
 
 
-  {{--   <!-- Newsletter Start -->
+    {{--   <!-- Newsletter Start -->
     <div class="container-fluid newsletter mt-6 wow fadeIn" data-wow-delay="0.1s">
         <div class="container pb-5">
             <div class="bg-white p-5 mb-5">
