@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\Admin\TeamworkController;
 use App\Http\Controllers\Admin\MasrahiyatController;
 use App\Http\Controllers\Admin\StatisticsController;
@@ -21,9 +21,9 @@ use App\Http\Controllers\Admin\StatisticsController;
     return view('welcome');
 }); */
 
-Route::get('/', function () {
-    return view('user.index');
-})->name('home');
+
+Route::get('/', [UserController::class, 'home'])->name('home');
+Route::get('/masrahiyat-home/page/{page}', [UserController::class, 'loadMasrahiyatPage']);
 
 Route::get('about', function () {
     return view('user.about');
@@ -35,7 +35,7 @@ Route::get('contact', function () {
 })->name('contact');
 
 
-
+Route::get('/masrahiyat/{id}/details', [UserController::class, 'detailsMasrahiyat'])->name('masrahiyat.details');
 
 
 
