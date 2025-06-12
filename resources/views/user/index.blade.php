@@ -46,44 +46,60 @@
     <!-- About Start -->
     <div class="container-fluid pt-6 pb-6">
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="about-img">
-                        <img class="img-fluid w-100" src="{{ asset('img/p2.jpeg') }}">
+            <div class="row g-5 align-items-center">
+                <!-- Image Column -->
+                <div class="col-lg-6 wow fadeIn d-flex align-items-stretch" data-wow-delay="0.1s">
+                    <div class="about-img w-100">
+                        <img class="img-fluid w-100 h-100 object-fit-cover rounded shadow-sm"
+                            src="{{ asset('img/p2.jpeg') }}" alt="Wahaj Shams Team">
                     </div>
                 </div>
+
+                <!-- Text Column -->
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-6 text-uppercase mb-4">Ultimate Welding and Quality Metal Solutions</h1>
+                    <h1 class="display-6 text-uppercase mb-4">Wahaj Shams for Theatrical and Folkloric Arts</h1>
                     <p class="mb-4">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue,
-                        iaculis id elit eget, ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu
-                        quis, fringilla risus. Pellentesque eu consequat augue.
+                        Wahaj Shams is a non-profit artistic institution based in Amman, Jordan, founded on December 24,
+                        2017. Our mission is to empower youth and communities through expressive and interactive theater
+                        that highlights important social issues while promoting positive behavioral change and
+                        community awareness.
                     </p>
-                    <div class="row g-5 mb-4">
+
+                    <div class="row g-4 mb-4">
                         <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-start">
                                 <div class="flex-shrink-0 btn-xl-square bg-light me-3">
-                                    <i class="fa fa-users-cog fa-2x text-primary"></i>
+                                    <i class="fa fa-users fa-2x text-primary"></i>
                                 </div>
-                                <h5 class="lh-base text-uppercase mb-0">Certified Expert & Team</h5>
+                                <div>
+                                    <h6 class="text-uppercase mb-1">Over 1,075 Beneficiaries Trained</h6>
+                                    <small>From various age groups and communities</small>
+                                </div>
                             </div>
                         </div>
+
                         <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-start">
                                 <div class="flex-shrink-0 btn-xl-square bg-light me-3">
-                                    <i class="fa fa-tachometer-alt fa-2x text-primary"></i>
+                                    <i class="fa fa-theater-masks fa-2x text-primary"></i>
                                 </div>
-                                <h5 class="lh-base text-uppercase mb-0">Fast & Reliable Services</h5>
+                                <div>
+                                    <h6 class="text-uppercase mb-1">357 Theatrical Shows</h6>
+                                    <small>Held across the Kingdom of Jordan</small>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <p><i class="fa fa-check-square text-primary me-3"></i>Many variations of passages of lorem ipsum</p>
-                    <p><i class="fa fa-check-square text-primary me-3"></i>Many variations of passages of lorem ipsum</p>
-                    <p><i class="fa fa-check-square text-primary me-3"></i>Many variations of passages of lorem ipsum</p>
-                    <div class="border border-5 border-primary p-4 text-center mt-4">
-                        <h4 class="lh-base text-uppercase mb-0">
-                            We’re Good in All Metal Works Using Quality Welding Tools
-                        </h4>
+
+                    <p><i class="fa fa-check-circle text-primary me-2"></i>11 awards in art and social impact</p>
+                    <p><i class="fa fa-check-circle text-primary me-2"></i>Networking with local and regional artists</p>
+                    <p><i class="fa fa-check-circle text-primary me-2"></i>Promoting youth development and community service
+                    </p>
+
+                    <div class="border border-4 border-primary p-4 text-center mt-4 rounded">
+                        <h5 class="lh-base text-uppercase mb-0">
+                            Empowering society through meaningful art and inclusive theater
+                        </h5>
                     </div>
                 </div>
             </div>
@@ -92,57 +108,86 @@
     <!-- About End -->
 
 
-    <!-- Features Start -->
-    <div class="container-fluid feature mt-6 mb-6 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row g-0 justify-content-end">
-                <div class="col-lg-6 pt-5">
-                    <div class="mt-5">
-                        <h1 class="display-6 text-white text-uppercase mb-4 wow fadeIn" data-wow-delay="0.3s">
-                            What We Offer at Wahj-AlShams
-                        </h1>
-                        <p class="text-light mb-4 wow fadeIn" data-wow-delay="0.4s">
-                            Explore the range of creative and community-driven services we provide to inspire, educate, and
-                            entertain.
-                        </p>
+    <!-- Services Section - Title + 3 Columns Cards -->
+<div class="container-fluid feature mt-6 mb-6 wow fadeIn" id="services" data-wow-delay="0.1s" style="background-color: #000;">
+    <div class="container">
 
-                        <div class="row g-4 pt-2 mb-4">
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
-                                <div class="flex-column text-center border border-5 border-primary p-4">
-                                    <i class="bi bi-people-fill text-white fs-1 mb-2"></i>
-                                    <h5 class="text-white text-uppercase">Theatrical Performances</h5>
-                                    <p class="text-white">Live stage plays for various audiences.</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
-                                <div class="flex-column text-center border border-5 border-primary p-4">
-                                    <i class="bi bi-calendar-event text-white fs-1 mb-2"></i>
-                                    <h5 class="text-white text-uppercase">Public Events</h5>
-                                    <p class="text-white">Cultural, social, and seasonal events.</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.6s">
-                                <div class="flex-column text-center border border-5 border-primary p-4">
-                                    <i class="bi bi-lightbulb text-white fs-1 mb-2"></i>
-                                    <h5 class="text-white text-uppercase">Workshops</h5>
-                                    <p class="text-white">Educational and creative skill sessions.</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
-                                <div class="flex-column text-center border border-5 border-primary p-4">
-                                    <i class="bi bi-hand-thumbs-up text-white fs-1 mb-2"></i>
-                                    <h5 class="text-white text-uppercase">Volunteering</h5>
-                                    <p class="text-white">Engage in meaningful community service.</p>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Title -->
+        <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+            <h1 class="display-6 text-white text-uppercase">What We Offer at Wahaj Al Shams</h1>
+        </div>
 
-                    </div>
+        <!-- Cards -->
+        <div class="row g-4 justify-content-center">
+
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="text-center border border-warning border-3 p-4 h-100">
+                    <i class="bi bi-easel2-fill fs-1 text-white mb-3"></i>
+                    <h5 class="text-white text-uppercase">Theatrical Performances</h5>
+                    <p class="text-light">Engaging plays for various communities and causes.</p>
                 </div>
             </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="text-center border border-warning border-3 p-4 h-100">
+                    <i class="bi bi-person-lines-fill fs-1 text-white mb-3"></i>
+                    <h5 class="text-white text-uppercase">Actor Training</h5>
+                    <p class="text-light">Skill-building for aspiring stage performers.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="text-center border border-warning border-3 p-4 h-100">
+                    <i class="bi bi-heart-pulse-fill fs-1 text-white mb-3"></i>
+                    <h5 class="text-white text-uppercase">Psychodrama Training</h5>
+                    <p class="text-light">Therapeutic drama techniques for healing and growth.</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="text-center border border-warning border-3 p-4 h-100">
+                    <i class="bi bi-people-fill fs-1 text-white mb-3"></i>
+                    <h5 class="text-white text-uppercase">Case Management & Referral</h5>
+                    <p class="text-light">Support and referral services for those in need.</p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="text-center border border-warning border-3 p-4 h-100">
+                    <i class="bi bi-emoji-smile-fill fs-1 text-white mb-3"></i>
+                    <h5 class="text-white text-uppercase">Children's Theater</h5>
+                    <p class="text-light">Interactive drama programs tailored for kids.</p>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="text-center border border-warning border-3 p-4 h-100">
+                    <i class="bi bi-ear-fill fs-1 text-white mb-3"></i>
+                    <h5 class="text-white text-uppercase">Drama for Hearing-Impaired</h5>
+                    <p class="text-light">Inclusive theater training using visual storytelling.</p>
+                </div>
+            </div>
+
+            <!-- Full Width Card -->
+            <div class="col-12">
+                <div class="text-center border border-warning border-3 p-4 h-100">
+                    <i class="bi bi-person-video3 fs-1 text-white mb-3"></i>
+                    <h5 class="text-white text-uppercase">TOT - Training of Trainers</h5>
+                    <p class="text-light">Empowering trainers to teach and lead in the world of theater.</p>
+                </div>
+            </div>
+
         </div>
     </div>
-    <!-- Features End -->
+</div>
+
+
 
     <!-- Service Start -->
     <div class="container-fluid service pt-6 pb-6">
@@ -166,11 +211,11 @@
                                     <p class="mb-1 text-muted small">Date:
                                         {{ \Carbon\Carbon::parse($play->performance_dates)->format('M d, Y') }}</p>
                                 </div>
-<div class="readmore-wrapper mt-auto px-4 pb-3 text-end">
-    <a href="{{ route('masrahiyat.details', $play->id) }}" class="custom-readmore-link">
-        Read More <i class="bi bi-chevron-double-right ms-1"></i>
-    </a>
-</div>
+                                <div class="readmore-wrapper mt-auto px-4 pb-3 text-end">
+                                    <a href="{{ route('masrahiyat.details', $play->id) }}" class="custom-readmore-link">
+                                        Read More <i class="bi bi-chevron-double-right ms-1"></i>
+                                    </a>
+                                </div>
 
                             </div>
                         </div>
@@ -221,9 +266,9 @@
         <div class="container pt-5">
             <div class="row gy-5 gx-0">
                 <div class="col-lg-6 pe-lg-5 wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="display-6 text-uppercase text-white mb-4">Volunteer with Us and Be Part of the Warm Wahj Al
+                    <h1 class="display-6 text-uppercase text-white mb-4">Volunteer with Us and Be Part of the Warm Wahaj Al
                         Shams Family!</h1>
-                    <p class="text-white mb-5 wow fadeIn" data-wow-delay="0.4s">At Wahj Al Shams, volunteers play a vital
+                    <p class="text-white mb-5 wow fadeIn" data-wow-delay="0.4s">At Wahaj Al Shams, volunteers play a vital
                         role in bringing vibrant theatrical performances to life. By joining the team, you'll have the
                         opportunity to support a variety of plays and take part in organizing exciting, high-energy events.
                         Whether it’s behind the scenes or in the spotlight, your contribution helps create unforgettable

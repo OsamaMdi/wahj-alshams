@@ -21,49 +21,34 @@
     </div>
     <!-- Page Header End -->
 
-
     <!-- About Start -->
     <div class="container-fluid pt-6 pb-6">
         <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="about-img">
-                        <img class="img-fluid w-100" src="{{ asset('img/p5.jpeg') }}" alt="Image">
-
+            <div class="row g-5 align-items-center">
+                <!-- Image Column -->
+                <div class="col-lg-6 wow fadeIn d-flex align-items-stretch" data-wow-delay="0.1s">
+                    <div class="about-img w-100">
+                        <img class="img-fluid w-100 h-100 object-fit-cover rounded shadow-sm"
+                            src="{{ asset('img/p2.jpeg') }}" alt="Wahaj Shams Team">
                     </div>
                 </div>
+
+                <!-- Text Column -->
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-6 text-uppercase mb-4">Ultimate Welding and Quality Metal Solutions</h1>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue,
-                        iaculis id elit eget, ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu
-                        quis, fringilla risus. Pellentesque eu consequat augue.</p>
-                    <div class="row g-5 mb-4">
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <div class="flex-shrink-0 btn-xl-square bg-light me-3">
-                                    <i class="fa fa-users-cog fa-2x text-primary"></i>
-                                </div>
-                                <h5 class="lh-base text-uppercase mb-0">Certified Expert & Team</h5>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <div class="flex-shrink-0 btn-xl-square bg-light me-3">
-                                    <i class="fa fa-tachometer-alt fa-2x text-primary"></i>
-                                </div>
-                                <h5 class="lh-base text-uppercase mb-0">Fast & Reliable Services</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <p><i class="fa fa-check-square text-primary me-3"></i>Many variations of passages of lorem ipsum
+                    <h1 class="display-6 text-uppercase mb-4">Wahaj Shams for Theatrical and Folkloric Arts</h1>
+                    <p class="mb-4">
+                        Wahaj Shams is a non-profit artistic institution based in Amman, Jordan, founded on December 24,
+                        2017. Our mission is to empower youth and communities through expressive and interactive theater
+                        that highlights important social issues while promoting positive behavioral change and
+                        community awareness.
                     </p>
-                    <p><i class="fa fa-check-square text-primary me-3"></i>Many variations of passages of lorem ipsum
-                    </p>
-                    <p><i class="fa fa-check-square text-primary me-3"></i>Many variations of passages of lorem ipsum
-                    </p>
-                    <div class="border border-5 border-primary p-4 text-center mt-4">
-                        <h4 class="lh-base text-uppercase mb-0">We’re Good in All Metal Works Using Quality Welding Tools
-                        </h4>
+                    <div class="my-5"></div>
+                    <p><i class="fa fa-check-circle text-primary me-2"></i>Networking with local and regional artists</p>
+                    <p><i class="fa fa-check-circle text-primary me-2"></i>Promoting youth development and community service</p>
+                    <div class="border border-4 border-primary p-4 text-center mt-4 rounded">
+                        <h5 class="lh-base text-uppercase mb-0">
+                            Empowering society through meaningful art and inclusive theater
+                        </h5>
                     </div>
                 </div>
             </div>
@@ -71,12 +56,10 @@
     </div>
     <!-- About End -->
 
-
     <!-- Features Start -->
     <div class="container-fluid pt-6 pb-6">
         <div class="container pt-4">
             <div class="row g-0 feature-row wow fadeIn" data-wow-delay="0.1s">
-
                 <!-- Total Plays -->
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
                     <div class="feature-item border h-100 text-center">
@@ -90,7 +73,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Awards -->
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.4s">
                     <div class="feature-item border h-100 text-center">
@@ -104,7 +86,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Volunteers -->
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
                     <div class="feature-item border h-100 text-center">
@@ -118,7 +99,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Governorates -->
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.6s">
                     <div class="feature-item border h-100 text-center">
@@ -132,12 +112,69 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
     <!-- Features End -->
 
+    <!-- Vision Section -->
+    <div class="container-fluid pt-6 pb-3 bg-light">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h2 class="display-6 text-uppercase">Our Vision</h2>
+            </div>
+            <p class="lead text-center">
+                To spread theatrical awareness and influence behavior change—especially among the most vulnerable youth—through arts, while developing and empowering them to serve their communities effectively and sustainably.
+            </p>
+        </div>
+    </div>
+
+    <!-- Mission Section -->
+    <div class="container-fluid pt-6 pb-3">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h2 class="display-6 text-uppercase">Our Mission</h2>
+            </div>
+            <ul class="list-unstyled fs-5 px-4 px-md-5">
+                <li><i class="fa fa-check-circle text-primary me-2"></i>Engage the local community in selecting priority social issues.</li>
+                <li><i class="fa fa-check-circle text-primary me-2"></i>Provide artistic and developmental training for youth through expressive and interactive theater tools.</li>
+                <li><i class="fa fa-check-circle text-primary me-2"></i>Promote behavioral change and raise awareness of social issues.</li>
+                <li><i class="fa fa-check-circle text-primary me-2"></i>Offer protection services against gender-based violence to enhance psychological well-being and safe environments.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Core Values Section -->
+    <div class="container-fluid pt-6 pb-3 bg-light">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h2 class="display-6 text-uppercase">Our Core Values</h2>
+            </div>
+            <ul class="list-unstyled fs-5 px-4 px-md-5">
+                <li><i class="fa fa-star text-primary me-2"></i>Art as a message</li>
+                <li><i class="fa fa-star text-primary me-2"></i>Focus on beneficiaries and involve them in change-making</li>
+                <li><i class="fa fa-star text-primary me-2"></i>Community service as a tool for growth and impact</li>
+                <li><i class="fa fa-star text-primary me-2"></i>Do-no-harm development, respecting privacy</li>
+                <li><i class="fa fa-star text-primary me-2"></i>Humanitarian work as a core value in everything we do</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Areas of Work Section -->
+    <div class="container-fluid pt-6 pb-6">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                <h2 class="display-6 text-uppercase">Areas of Work</h2>
+            </div>
+            <ul class="list-unstyled fs-5 px-4 px-md-5">
+                <li><i class="fa fa-check text-primary me-2"></i>Engaging the community in identifying social issues and creative solutions</li>
+                <li><i class="fa fa-check text-primary me-2"></i>Theatrical training and artistic capacity building</li>
+                <li><i class="fa fa-check text-primary me-2"></i>Youth development and empowerment of vulnerable groups</li>
+                <li><i class="fa fa-check text-primary me-2"></i>Protection services, especially against gender-based violence</li>
+                <li><i class="fa fa-check text-primary me-2"></i>Networking beneficiaries with artists and supporters to enhance impact</li>
+            </ul>
+        </div>
+    </div>
 
     <!-- Team Section Start -->
     <div class="container-fluid wahj-team pt-6 pb-6">
@@ -163,30 +200,4 @@
         </div>
     </div>
     <!-- Team Section End -->
-
-
-    {{--   <!-- Newsletter Start -->
-    <div class="container-fluid newsletter mt-6 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container pb-5">
-            <div class="bg-white p-5 mb-5">
-                <div class="row g-5">
-                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
-                        <h1 class="display-6 text-uppercase mb-4">Newsletter</h1>
-                        <div class="d-flex">
-                            <i class="far fa-envelope-open fa-3x text-primary me-4"></i>
-                            <p class="fs-5 fst-italic mb-0">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore lorem ipsum.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s">
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control border-0 bg-light" id="mail" placeholder="Your Email">
-                            <label for="mail">Your Email</label>
-                        </div>
-                        <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Newsletter End --> --}}
 @endsection
