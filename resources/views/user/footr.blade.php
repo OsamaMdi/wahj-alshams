@@ -1,6 +1,6 @@
 
 
-<!-- Testimonial Start -->
+{{-- <!-- Testimonial Start -->
 <div class="container-fluid pt-6 pb-6">
     <div class="container">
         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
@@ -52,9 +52,9 @@
     </div>
 </div>
 <!-- Testimonial End -->
+ --}}
 
-
- <!-- Newsletter Start -->
+ {{-- <!-- Newsletter Start -->
     <div class="container-fluid newsletter mt-6 wow fadeIn" data-wow-delay="0.1s">
         <div class="container pb-5">
             <div class="bg-white p-5 mb-5">
@@ -77,42 +77,52 @@
             </div>
         </div>
     </div>
+ --}}
 
-
-
-
-
-
-    <!-- Back to Top -->
-<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
-    <i class="bi bi-arrow-up"></i>
-</a>
 
 
 <!-- Footer Start -->
 <div class="container-fluid bg-dark footer py-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
         <div class="row g-5">
+
+            <!-- Contact Info -->
             <div class="col-lg-3 col-md-6">
                 <h5 class="text-uppercase text-light mb-4">Our Office</h5>
-                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New York, USA</p>
-                <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p>
-                <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@example.com</p>
+                <p class="mb-2">
+                    <i class="fa fa-map-marker-alt text-primary me-3"></i>
+                    <a href="https://www.google.com/maps?q=Khaled+Ben+Al-Walid+St,+Amman" target="_blank" class="text-white text-decoration-none">
+                        Khaled Ben Al-Walid St., Amman
+                    </a>
+                </p>
+                <p class="mb-2">
+                    <i class="fa fa-phone-alt text-primary me-3"></i>
+                    <a href="tel:+962791234567" class="text-white text-decoration-none">+962 7 9123 4567</a>
+                </p>
+                <p class="mb-2">
+                    <i class="fa fa-envelope text-primary me-3"></i>
+                    <a href="mailto:info@example.com" class="text-white text-decoration-none">info@example.com</a>
+                </p>
+
                 <div class="d-flex pt-3">
+                    <a class="btn btn-square btn-light me-2" href="https://www.facebook.com/share/1Bvbd52wVR/" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
                     <a class="btn btn-square btn-light me-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-square btn-light me-2" href="#"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-square btn-light me-2" href="#"><i class="fab fa-youtube"></i></a>
                     <a class="btn btn-square btn-light me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
+
+            <!-- Quick Links -->
             <div class="col-lg-3 col-md-6">
                 <h5 class="text-uppercase text-light mb-4">Quick Links</h5>
-                <a class="btn btn-link" href="{{-- {{ route('about') }} --}}">About Us</a>
-                <a class="btn btn-link" href="{{-- {{ route('contact') }} --}}">Contact Us</a>
-                <a class="btn btn-link" href="{{-- {{ route('services') }} --}}">Our Services</a>
-                <a class="btn btn-link" href="#">Terms & Condition</a>
-                <a class="btn btn-link" href="#">Support</a>
+                <a class="btn btn-link" href="{{ route('about') }}">About Us</a>
+                <a class="btn btn-link" href="{{ route('contact') }}">Contact Us</a>
+                <a class="btn btn-link" href="{{ url('/#services') }}">Our Services</a>
             </div>
+
+            <!-- Business Hours -->
             <div class="col-lg-3 col-md-6">
                 <h5 class="text-uppercase text-light mb-4">Business Hours</h5>
                 <p class="text-uppercase mb-0">Monday - Friday</p>
@@ -122,6 +132,8 @@
                 <p class="text-uppercase mb-0">Sunday</p>
                 <p>Closed</p>
             </div>
+
+            <!-- Gallery -->
             <div class="col-lg-3 col-md-6">
                 <h5 class="text-uppercase text-light mb-4">Gallery</h5>
                 <div class="row g-1">
@@ -132,6 +144,7 @@
                     @endfor
                 </div>
             </div>
+
         </div>
     </div>
 </div>
@@ -150,9 +163,6 @@
 
 <!-- Template Javascript -->
 <script src="{{ asset('js/main.js') }}"></script>
-</body>
-</html>
-
 
 
     <!-- Newsletter Start -->
