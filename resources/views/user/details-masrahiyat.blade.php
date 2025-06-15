@@ -52,7 +52,7 @@
             @endphp
             @if ($videoId)
                 <div class="d-flex justify-content-center mb-5 animate__animated animate__fadeIn">
-                    <div class="video-wrapper rounded-4 overflow-hidden shadow-lg" style="max-width: 800px; width: 100%; border: 4px solid white;">
+                    <div class="video-wrapper rounded-4 overflow-hidden shadow-lg" style="max-width: 800px; width: 800px;height: 400px; border: 4px solid white;">
                         <iframe src="https://www.youtube.com/embed/{{ $videoId }}?autoplay=1&mute=1"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
