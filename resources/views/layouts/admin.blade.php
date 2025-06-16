@@ -58,8 +58,14 @@
             </li>
         </ul>
         <div class="logout mt-auto text-center p-3">
-            <a href="#" class="btn btn-danger w-100"><i class="fas fa-sign-out-alt me-1"></i> Logout</a>
+            <form action="{{ route('admin.logout') }}" method="POST">
+                @csrf
+                <button type="submit" class="btn btn-danger w-100">
+                    <i class="fas fa-sign-out-alt me-1"></i> Logout
+                </button>
+            </form>
         </div>
+
     </div>
 
     <!-- Main Content -->
