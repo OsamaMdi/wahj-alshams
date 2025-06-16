@@ -129,7 +129,7 @@
 }
 
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link  {
+    .navbar .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
@@ -257,6 +257,13 @@
 .about-img {
     position: relative;
     padding-left: 45px;
+    height: 100%;
+}
+
+.about-img img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .about-img::before {
@@ -272,15 +279,9 @@
 }
 
 @keyframes animateUpDown {
-    0% {
-        top: -25px;
-    }
-    50% {
-        top: -45px;
-    }
-    100% {
-        top: -25px;
-    }
+    0% { top: -25px; }
+    50% { top: -45px; }
+    100% { top: -25px; }
 }
 
 
@@ -335,6 +336,7 @@
     width: 0px;
     transition: 3s;
 }
+
 /* ==========================================================================
    Custom Card Style for Masrahiyat Section (Latest Plays)
    Designed to be modern, minimal, short-height, and responsive
@@ -349,12 +351,14 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    transition: none; /* No hover animation */
+    transition: none;
+    /* No hover animation */
 }
 
 .service .service-item img {
     width: 100%;
-    height: 180px; /* taller image */
+    height: 180px;
+    /* taller image */
     object-fit: cover;
     display: block;
 }
@@ -365,7 +369,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 100px; /* smaller text block */
+    height: 100px;
+    /* smaller text block */
 }
 
 .service .service-text h5 {
@@ -388,7 +393,8 @@
 
 .service .btn {
     font-size: 0.8rem;
-    margin: 12px 16px 14px; /* Add spacing between text and button */
+    margin: 12px 16px 14px;
+    /* Add spacing between text and button */
     padding: 6px 14px;
     border-radius: 20px;
     background-color: #f8f8f8;
@@ -403,6 +409,7 @@
     color: #fff;
     border-color: #000;
 }
+
 /* Read More Link Styling */
 .custom-readmore-link {
     display: inline-block;
@@ -639,7 +646,7 @@
 .wahj-team-card {
     background: #fff;
     border-radius: 14px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     height: 100%;
     display: flex;
@@ -685,12 +692,15 @@
     .wahj-team-card {
         min-height: 320px;
     }
+
     .wahj-team-img img {
         height: 200px;
     }
+
     .wahj-team-content h5 {
         font-size: 1rem;
     }
+
     .wahj-team-content .role {
         font-size: 0.85rem;
     }

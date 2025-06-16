@@ -14,6 +14,8 @@ Route::get('/about', [UserController::class, 'about'])->name('about');
 Route::get('contact', function () {
     return view('user.contact');
 })->name('contact');
+
+
 Route::get('/masrahiyat/{id}/details', [UserController::class, 'detailsMasrahiyat'])->name('masrahiyat.details');
 
 // تسجيل الدخول للإدمن فقط
