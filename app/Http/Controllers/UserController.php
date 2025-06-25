@@ -21,8 +21,11 @@ class UserController extends Controller
     {
         $masrahiyat = Masrahiya::latest()->take(8)->get();
         $total = Masrahiya::count();
-        return view('user.index', compact('masrahiyat', 'total'));
+        $teamwork = Teamwork::where('home', true)->take(4)->get();
+
+        return view('user.index', compact('masrahiyat', 'total', 'teamwork'));
     }
+
 
     public function loadMasrahiyatPage($page)
     {

@@ -16,7 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Admin CSS -->
-    <link href="{{ asset('css/admin.css') }}" rel="stylesheet"> <!-- هذا يبقى محلي لأنه مخصص لك -->
+    <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
 </head>
 
 <body data-message="{{ session('success') ?? session('error') }}"
@@ -30,7 +30,7 @@
         <ul class="nav flex-column px-3">
 
             <li class="nav-item">
-                <a class="nav-link text-white {{ request()->routeIs('admin.dashboard.*') ? 'active' : '' }}"
+                <a class="nav-link text-white {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}"
                     href="{{ route('admin.dashboard.index') }}">
                     Dashboard
                 </a>
@@ -56,7 +56,9 @@
                     Team Work
                 </a>
             </li>
+
         </ul>
+
         <div class="logout mt-auto text-center p-3">
             <form action="{{ route('admin.logout') }}" method="POST">
                 @csrf
@@ -65,7 +67,6 @@
                 </button>
             </form>
         </div>
-
     </div>
 
     <!-- Main Content -->
@@ -83,15 +84,12 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- Bootstrap Bundle JS (with Popper) -->
+    <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom Admin Script -->
+    <!-- Custom Scripts -->
     <script src="{{ asset('js/admin.js') }}"></script>
-
     <script src="{{ asset('js/delete-confirm.js') }}"></script>
-
-
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="{{ asset('js/alerts.js') }}"></script>
     @stack('scripts')

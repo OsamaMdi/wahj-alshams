@@ -13,13 +13,19 @@ return new class extends Migration
     {
         Schema::create('statistics', function (Blueprint $table) {
             $table->id();
-            //number of plays
+
+            // Number of plays
             $table->integer('number_of_plays')->default(0);
-            //number of awords
+
+            // Number of awards
             $table->integer('number_of_awards')->default(0);
-            //number of valnteers
+
+            // Number of volunteers
             $table->integer('number_of_volunteers')->default(0);
-        
+
+            // Number of governorates (added after volunteers)
+            $table->integer('number_of_governorates')->default(0);
+
             $table->timestamps();
         });
     }

@@ -12,6 +12,7 @@ class CreateTeamworkTable extends Migration
             $table->string('name');
             $table->string('image_path')->nullable();
             $table->text('description')->nullable();
+            $table->boolean('home')->default(false);
             $table->timestamps();
         });
     }

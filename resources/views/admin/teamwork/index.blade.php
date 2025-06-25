@@ -27,6 +27,7 @@
                             <th>Name</th>
                             <th>Image</th>
                             <th>Description</th>
+                            <th>Home</th> {{-- ✅ العمود الجديد --}}
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -45,6 +46,13 @@
                                 </td>
                                 <td>{{ Str::limit($member->description, 50) }}</td>
                                 <td>
+                                    @if ($member->home)
+                                        <i class="fas fa-check text-success" title="Shown on Home"></i>
+                                    @else
+                                        <i class="fas fa-times text-danger" title="Not on Home"></i>
+                                    @endif
+                                </td>
+                                <td>
                                     <a href="{{ route('admin.teamwork.edit', $member->id) }}"
                                         class="btn btn-sm btn-warning me-1" title="Edit">
                                         <i class="fas fa-edit"></i>
@@ -53,16 +61,15 @@
                                         class="d-inline btn-delete-form">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="btn btn-sm btn-danger">
+                                        <button type="submit" class="btn btn-sm btn-danger" title="Delete">
                                             <i class="fas fa-trash-alt"></i>
                                         </button>
                                     </form>
-
                                 </td>
                             </tr>
                         @empty
                             <tr>
-                                <td colspan="5">No records found.</td>
+                                <td colspan="6">No records found.</td>
                             </tr>
                         @endforelse
                     </tbody>
