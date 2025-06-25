@@ -33,11 +33,14 @@ class TeamworkController extends Controller
             'name' => 'required|string|max:255',
             'description' => 'nullable|string',
             'image_path' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
+            'home' => 'nullable|boolean',
         ]);
 
         if ($request->hasFile('image_path')) {
             $validated['image_path'] = $request->file('image_path')->store('teamwork', 'public');
         }
+
+        $validated['home'] = $request->has('home'); // ✅ حفظ القيمة
 
         Teamwork::create($validated);
 
@@ -60,6 +63,7 @@ class TeamworkController extends Controller
             'name' => 'required|string|max:255',
             'description' => 'nullable|string',
             'image_path' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
+            'home' => 'nullable|boolean',
         ]);
 
         if ($request->hasFile('image_path')) {
@@ -68,6 +72,8 @@ class TeamworkController extends Controller
             }
             $validated['image_path'] = $request->file('image_path')->store('teamwork', 'public');
         }
+
+        $validated['home'] = $request->has('home'); // ✅ تحديث القيمة
 
         $teamwork->update($validated);
 

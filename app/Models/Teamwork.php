@@ -15,5 +15,6 @@ class Teamwork extends Model
         'name',
         'image_path',
         'description',
+        'home',
     ];
 }

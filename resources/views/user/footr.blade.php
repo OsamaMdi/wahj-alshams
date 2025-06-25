@@ -1,5 +1,3 @@
-
-
 {{-- <!-- Testimonial Start -->
 <div class="container-fluid pt-6 pb-6">
     <div class="container">
@@ -54,7 +52,7 @@
 <!-- Testimonial End -->
  --}}
 
- {{-- <!-- Newsletter Start -->
+{{-- <!-- Newsletter Start -->
     <div class="container-fluid newsletter mt-6 wow fadeIn" data-wow-delay="0.1s">
         <div class="container pb-5">
             <div class="bg-white p-5 mb-5">
@@ -91,7 +89,8 @@
                 <h5 class="text-uppercase text-light mb-4">Our Office</h5>
                 <p class="mb-2">
                     <i class="fa fa-map-marker-alt text-primary me-3"></i>
-                    <a href="https://www.google.com/maps?q=Khaled+Ben+Al-Walid+St,+Amman" target="_blank" class="text-white text-decoration-none">
+                    <a href="https://www.google.com/maps?q=Khaled+Ben+Al-Walid+St,+Amman" target="_blank"
+                        class="text-white text-decoration-none">
                         Khaled Ben Al-Walid St., Amman
                     </a>
                 </p>
@@ -105,12 +104,15 @@
                 </p>
 
                 <div class="d-flex pt-3">
-                    <a class="btn btn-square btn-light me-2" href="https://www.facebook.com/share/1Bvbd52wVR/" target="_blank">
+                    <a class="btn btn-square btn-light me-2" href="https://www.facebook.com/share/1Bvbd52wVR/"
+                        target="_blank">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a class="btn btn-square btn-light me-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-square btn-light me-2" href="#"><i class="fab fa-youtube"></i></a>
-                    <a class="btn btn-square btn-light me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-square btn-light me-2"
+                        href="https://youtube.com/@shamsteam2119?si=NjQ335pD1kLIDM66" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
                 </div>
             </div>
 
@@ -139,7 +141,8 @@
                 <div class="row g-1">
                     @for ($i = 1; $i <= 6; $i++)
                         <div class="col-4">
-                            <img class="img-fluid" src="{{ asset("img/service-$i.jpg") }}" alt="">
+                            <img class="img-fluid rounded shadow-sm" src="{{ asset("img/f$i.jpg") }}" alt=""
+                                style="height: 80px; object-fit: cover; width: 100%;">
                         </div>
                     @endfor
                 </div>
@@ -165,9 +168,9 @@
 <script src="{{ asset('js/main.js') }}"></script>
 
 
-    <!-- Newsletter Start -->
-     <!-- Copyright Start -->
-    {{-- <div class="container-fluid text-body copyright py-4">
+<!-- Newsletter Start -->
+<!-- Copyright Start -->
+{{-- <div class="container-fluid text-body copyright py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
@@ -182,5 +185,4 @@
             </div>
         </div>
     </div> --}}
-    <!-- Copyright End -->
-
+<!-- Copyright End -->
