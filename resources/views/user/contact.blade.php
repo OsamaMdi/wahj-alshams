@@ -65,28 +65,30 @@
             <div class="col-lg-6">
                 <div class="bg-white p-5 h-100">
                     <h3 class="text-uppercase mb-4">Contact Us</h3>
-                    <form>
+                    <form method="POST" action="{{ route('contact.send') }}">
+                        @csrf
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <input type="text" class="form-control border-0 bg-light" placeholder="Your Name">
+                                <input type="text" name="name" class="form-control border-0 bg-light" placeholder="Your Name" required>
                             </div>
                             <div class="col-md-6">
-                                <input type="email" class="form-control border-0 bg-light" placeholder="Your Email">
+                                <input type="email" name="email" class="form-control border-0 bg-light" placeholder="Your Email" required>
                             </div>
                             <div class="col-md-6">
-                                <input type="text" class="form-control border-0 bg-light" placeholder="Your Mobile">
+                                <input type="text" name="phone" class="form-control border-0 bg-light" placeholder="Your Mobile">
                             </div>
                             <div class="col-md-6">
-                                <input type="text" class="form-control border-0 bg-light" placeholder="Subject">
+                                <input type="text" name="subject" class="form-control border-0 bg-light" placeholder="Subject" required>
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control border-0 bg-light" rows="5" placeholder="Your Message"></textarea>
+                                <textarea name="message" class="form-control border-0 bg-light" rows="5" placeholder="Your Message" required></textarea>
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-warning w-100 py-3 text-uppercase fw-bold" type="submit">Submit Now</button>
                             </div>
                         </div>
                     </form>
+                    
                 </div>
             </div>
         </div>

@@ -6,6 +6,9 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Admin\TeamworkController;
 use App\Http\Controllers\Admin\MasrahiyatController;
 use App\Http\Controllers\Admin\StatisticsController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\VolunteerController;
+
 
 // الصفحات العامة (بدون تسجيل دخول)
 Route::get('/', [UserController::class, 'home'])->name('home');
@@ -36,3 +39,7 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'admin'])->group(fun
 });
 
 Route::post('/admin/logout', [AuthController::class, 'logout'])->name('admin.logout');
+
+Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
+
+Route::post('/volunteer', [VolunteerController::class, 'send'])->name('volunteer.send');
