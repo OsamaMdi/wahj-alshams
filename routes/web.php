@@ -9,6 +9,9 @@ use App\Http\Controllers\Admin\UserController as AdminUserController;
 use App\Http\Controllers\Admin\TeamworkController;
 use App\Http\Controllers\Admin\MasrahiyatController;
 use App\Http\Controllers\Admin\StatisticsController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\VolunteerController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -64,3 +67,5 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'admin'])->group(fun
 
     // You can add more admin routes here...
 });
+
+Route::post('/admin/logout', [AuthController::class, 'logout'])->name('admin.logout');

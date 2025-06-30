@@ -284,55 +284,49 @@
                     <hr class="bg-body">
 
                 </div>
-                <div class="col-lg-6 mb-n5 wow fadeIn" data-wow-delay="0.7s">
-                    <div class="bg-white p-5">
-                        <h2 class="text-uppercase mb-4">Volunteer Application Form</h2>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control border-0 bg-light" id="name"
-                                        placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control border-0 bg-light" id="mail"
-                                        placeholder="Your Email">
-                                    <label for="mail">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="number" class="form-control border-0 bg-light" id="age"
-                                        placeholder="Your Age">
-                                    <label for="age">Your Age</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <select class="form-select border-0 bg-light" id="volunteerPeriod">
-                                        <option selected>1-2 Weeks</option>
-                                        <option value="3-4 Weeks">3-4 Weeks</option>
-                                        <option value="1-2 Months">1-2 Months</option>
-                                        <option value="Flexible">Flexible</option>
-                                    </select>
-                                    <label for="volunteerPeriod">Preferred Volunteer Period</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control border-0 bg-light" placeholder="Tell us why you want to volunteer" id="whyVolunteer"
-                                        style="height: 130px"></textarea>
-                                    <label for="whyVolunteer">Why do you want to volunteer?</label>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Submit Application</button>
+                <form action="{{ route('volunteer.send') }}" method="POST">
+                    @csrf
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="text" name="name" class="form-control border-0 bg-light" id="name" placeholder="Your Name">
+                                <label for="name">Your Name</label>
                             </div>
                         </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="email" name="email" class="form-control border-0 bg-light" id="mail" placeholder="Your Email">
+                                <label for="mail">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <input type="number" name="age" class="form-control border-0 bg-light" id="age" placeholder="Your Age">
+                                <label for="age">Your Age</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating">
+                                <select class="form-select border-0 bg-light" name="volunteerPeriod" id="volunteerPeriod">
+                                    <option value="1-2 Weeks">1-2 Weeks</option>
+                                    <option value="3-4 Weeks">3-4 Weeks</option>
+                                    <option value="1-2 Months">1-2 Months</option>
+                                    <option value="Flexible">Flexible</option>
+                                </select>
+                                <label for="volunteerPeriod">Preferred Volunteer Period</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control border-0 bg-light" name="whyVolunteer" id="whyVolunteer" style="height: 130px" placeholder="Tell us why you want to volunteer"></textarea>
+                                <label for="whyVolunteer">Why do you want to volunteer?</label>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Submit Application</button>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>

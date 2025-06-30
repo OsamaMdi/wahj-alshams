@@ -8,13 +8,11 @@ use Illuminate\Support\Facades\Validator;
 use App\Models\User;
 class AuthController extends Controller
 {
-    // عرض نموذج تسجيل الدخول
     public function showLoginForm()
     {
         return view('auth.admin_login');
     }
 
-    // معالجة تسجيل الدخول
     public function login(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -37,7 +35,6 @@ class AuthController extends Controller
         $remember = $request->has('remember');
 
         if (Auth::attempt($credentials, $remember)) {
-            // التحقق من أن المستخدم إدمن
             if (Auth::user()->role !== 'admin') {
                 Auth::logout();
                 return redirect()->route('admin.login')
@@ -52,7 +49,6 @@ class AuthController extends Controller
         return back()->with('error', 'بيانات الدخول غير صحيحة')->withInput();
     }
 
-    // تسجيل الخروج
     public function logout(Request $request)
     {
         Auth::logout();
