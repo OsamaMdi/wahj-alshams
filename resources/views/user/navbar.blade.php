@@ -54,11 +54,11 @@
                         Amman</small>
                     <small class="ms-4">
                         <i class="fa fa-envelope me-3"></i>
-                        <a href="mailto:info@example.com" class="text-white text-decoration-none">info@example.com</a>
+                        <a href="mailto:info@example.com" class="text-white text-decoration-none">shamsteam25@gmail.com</a>
                     </small>
                     <small class="ms-4">
                         <i class="fa fa-phone-alt me-3"></i>
-                        <a href="tel:+962791234567" class="text-white text-decoration-none">+962 7 9123 4567</a>
+                        <a href="tel:+962791234567" class="text-white text-decoration-none">+962 795507718</a>
                     </small>
                     <div class="ms-3 d-flex">
                         <a class="btn btn-sm-square btn-light text-primary ms-2"

@@ -404,7 +404,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.85); /* لون غامق وواضح */
+    background-color: rgba(0, 0, 0, 0.85); 
     color: #fff;
     display: flex;
     flex-direction: column;
